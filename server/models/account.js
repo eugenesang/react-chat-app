@@ -27,7 +27,16 @@ const Account = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // Additional fields can be added here, e.g., phone number, address, etc.
+    notifications: {
+      type: Datatypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0,
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: Sequelize.NOW,
+    }
   });
 
   // Add relationships to other models (optional)
