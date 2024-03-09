@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ConversationCard = ({
-    title, lastMessage, id, date, onlineState, chatThumbnail, title
+    title, lastMessage, id, date, onlineState, chatThumbnail,
 }) => {
     return ( <article className='conversation-card'>
         <div className='chat-card-right'>
